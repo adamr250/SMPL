@@ -1,0 +1,39 @@
+<Name>
+
+my_setblock
+
+<Arg>
+
+string
+string
+string
+string
+string
+string
+<Run>
+
+<text>
+setblock 
+</text>
+arg 0
+<text>
+ 
+</text>
+arg 1
+<text>
+ 
+</text>
+arg 2
+<text>
+ 
+</text>
+arg 3
+<text>
+ 
+</text>
+arg 4
+<text>
+ 
+</text>
+arg 5
+endl
