@@ -1,3 +1,5 @@
+//FOR TESTS ONLY
+
 #include "lekser.h"
 #include <iostream>
 #include <fstream>
