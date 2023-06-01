@@ -1,0 +1,36 @@
+<init>
+
+int y;
+int x;
+function main;
+function test;
+int xFirst;
+
+<run>
+
+function main {
+    #y = 4;
+    #x = 3;#test
+    y = (y+a)+(b+c)-x;
+    #y= y*x;
+    $ tp 0 0 0 @p[entity = bat];
+    #say " wynik:y = " + y + " {koniec;} \n"; #test ;";";"$$
+    if ( y > 6) {
+        y = 0;
+    }
+    while ( y < 6) {
+    	y = y #jeszcze
+    		+#jeden
+    			 1; #kolejny
+    		#test
+    }
+    #xFirst=x - y / bbbb*cccc + aaaa * x + cccc*x - y;
+    #run file1:file2/file3::functionRun_1;
+    #run std::functionRun_2;
+    testFunction (x, y);
+}
+
+#function test {
+#    say " wynik:y = " + y + " koniec ";
+#}
+

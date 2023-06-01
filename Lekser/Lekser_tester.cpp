@@ -1,8 +1,45 @@
 //FOR TESTS ONLY
 
-#include "lekser.h"
+#include "Lekser.h"
 #include <iostream>
 #include <fstream>
+
+//----------pobieranie wartości z klasy Statement------------------
+std::vector<Statement> Lekser::getStatementVector(){
+    return statementResult;
+}
+
+std::string Lekser::getName() {
+    return statementResult[0].name;
+}
+
+int Lekser::getArgc() {
+    return statementResult[0].argc;
+}
+
+std::vector<std::string> Lekser::getArgv() {
+    return statementResult[0].argv;
+}
+
+Statement Lekser::getNext() {
+    Statement StatementNext;
+    if(statementResult.empty()) {
+        StatementNext.name = "EOF";
+        StatementNext.argc = 0;
+
+        return StatementNext;
+    }
+
+    StatementNext.name  = getName();
+    StatementNext.argc  = getArgc();
+    StatementNext.argv  = getArgv();
+    StatementNext.statv = statementResult[0].statv;
+
+    statementResult.erase(statementResult.begin());
+    return StatementNext;
+}
+//------------------------------------------------------------
+
 
 int main(){
 
